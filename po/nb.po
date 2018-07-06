@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalu 4.0.2\n"
 "Report-Msgid-Bugs-To: https://github.com/jjk-jacky/kalu/issues\n"
-"POT-Creation-Date: 2018-01-27 14:45+0100\n"
+"POT-Creation-Date: 2018-07-05 20:36-0600\n"
 "PO-Revision-Date: 2016-02-29 19:17+0100\n"
 "Last-Translator: Kim Nordmo <kim.nordmo@gmail.com>\n"
 "Language-Team: Norwegian Bokmal\n"
@@ -618,7 +618,7 @@ msgstr "Kunne ikk legge server %s til databasen %s: %s"
 msgid "Failed to update %s: %s"
 msgstr "Kunne ikke oppdatere %s: %s"
 
-#: src/kalu/kalu-alpm.c:776 src/kalu-dbus/kalu-dbus.c:1234
+#: src/kalu/kalu-alpm.c:776 src/kalu-dbus/kalu-dbus.c:1243
 #, c-format
 msgid "- Package %s does not have a valid architecture\n"
 msgstr "- Pakke %s har ingen gyldig arkitektur\n"
@@ -837,7 +837,7 @@ msgid "Mark checked news as read"
 msgstr "Merk valgte nyheter som lest"
 
 #: src/kalu/news.c:1273 src/kalu/preferences.c:2193 src/kalu/updater.c:3228
-#: src/kalu/watched.c:945
+#: src/kalu/watched.c:1002
 msgid "_Close"
 msgstr "_Lukk"
 
@@ -1431,15 +1431,15 @@ msgstr "Ikke sjekk AUR for de følgende pakkene :"
 msgid "Package name"
 msgstr "Pakkenavn"
 
-#: src/kalu/preferences.c:2071 src/kalu/watched.c:724
+#: src/kalu/preferences.c:2071 src/kalu/watched.c:778
 msgid "Add a new package"
 msgstr "Legg til en ny pakke"
 
-#: src/kalu/preferences.c:2072 src/kalu/watched.c:733
+#: src/kalu/preferences.c:2072 src/kalu/watched.c:787
 msgid "Edit selected package"
 msgstr "Rediger valgt pakke"
 
-#: src/kalu/preferences.c:2073 src/kalu/watched.c:743
+#: src/kalu/preferences.c:2073 src/kalu/watched.c:797
 msgid "Remove selected package"
 msgstr "Fjern valgt pakke"
 
@@ -1761,12 +1761,12 @@ msgctxt "column"
 msgid "Repo"
 msgstr "Brønn"
 
-#: src/kalu/updater.c:1318 src/kalu/updater.c:3042 src/kalu/watched.c:846
+#: src/kalu/updater.c:1318 src/kalu/updater.c:3042 src/kalu/watched.c:900
 msgctxt "column"
 msgid "Package"
 msgstr "Pakke"
 
-#: src/kalu/updater.c:1326 src/kalu/watched.c:865
+#: src/kalu/updater.c:1326 src/kalu/watched.c:919
 msgctxt "column"
 msgid "Version"
 msgstr "Versjon"
@@ -2121,17 +2121,17 @@ msgctxt "column"
 msgid "Old/Current"
 msgstr "Gammel/Nåværende"
 
-#: src/kalu/updater.c:3062 src/kalu/watched.c:875
+#: src/kalu/updater.c:3062 src/kalu/watched.c:929
 msgctxt "column"
 msgid "New"
 msgstr "Ny"
 
-#: src/kalu/updater.c:3074 src/kalu/watched.c:885
+#: src/kalu/updater.c:3074 src/kalu/watched.c:939
 msgctxt "column"
 msgid "Download"
 msgstr "Last Ned"
 
-#: src/kalu/updater.c:3096 src/kalu/watched.c:896
+#: src/kalu/updater.c:3096 src/kalu/watched.c:950
 msgctxt "column"
 msgid "Installed"
 msgstr "Installert"
@@ -2212,48 +2212,57 @@ msgstr "Jaja, importer endringer."
 msgid "No, keep the list as is."
 msgstr "Nei, behold listen som den er."
 
-#: src/kalu/watched.c:674
+#: src/kalu/watched.c:696
+msgid "Check all packages"
+msgstr ""
+
+#: src/kalu/watched.c:701
+#, fuzzy
+msgid "Uncheck all packages"
+msgstr "Kan ikke se etter AUR pakker"
+
+#: src/kalu/watched.c:728
 msgid "Mark updated watched packages - kalu"
 msgstr "Merk oppdaterte overvåkte pakker - kalu"
 
-#: src/kalu/watched.c:678
+#: src/kalu/watched.c:732
 msgid "Manage watched packages - kalu"
 msgstr "Administrer overvåkte pakker - kalu"
 
-#: src/kalu/watched.c:682
+#: src/kalu/watched.c:736
 msgid "Mark updated watched AUR packages - kalu"
 msgstr "Merk oppdaterte overvåkte AUR pakker - kalu"
 
-#: src/kalu/watched.c:686
+#: src/kalu/watched.c:740
 msgid "Manage watched AUR packages - kalu"
 msgstr "Administrer overvåkte AUR pakker - kalu"
 
-#: src/kalu/watched.c:760
+#: src/kalu/watched.c:814
 msgid "Reload list from memory (undo changes)"
 msgstr "Last liste fra minnet (angre endringer)"
 
-#: src/kalu/watched.c:772
+#: src/kalu/watched.c:826
 msgid "Reload list from file"
 msgstr "Last liste fra fil"
 
-#: src/kalu/watched.c:824
+#: src/kalu/watched.c:878
 msgctxt "column"
 msgid "Update"
 msgstr "Oppdater"
 
-#: src/kalu/watched.c:920
+#: src/kalu/watched.c:977
 msgid "_Mark as seen"
 msgstr "_Marker som sett"
 
-#: src/kalu/watched.c:925
+#: src/kalu/watched.c:982
 msgid "Save new version numbers of checked packages"
 msgstr "Lagre nye versjonsnumre av de valgte pakkene"
 
-#: src/kalu/watched.c:933
+#: src/kalu/watched.c:990
 msgid "_Save list"
 msgstr "_Lagre liste"
 
-#: src/kalu/watched.c:938
+#: src/kalu/watched.c:995
 msgid "Save list of watched packages"
 msgstr "Lagre liste over overvåkede pakker"
 
@@ -2265,110 +2274,110 @@ msgstr "[installert]"
 msgid " [pending]"
 msgstr "[underveis]"
 
-#: src/kalu-dbus/kalu-dbus.c:741
+#: src/kalu-dbus/kalu-dbus.c:750
 msgid "Session already initialized\n"
 msgstr "Økten er allerede initialisert\n"
 
-#: src/kalu-dbus/kalu-dbus.c:763
+#: src/kalu-dbus/kalu-dbus.c:772
 msgid "No error message"
 msgstr "Ingen feilmelding"
 
-#: src/kalu-dbus/kalu-dbus.c:773
+#: src/kalu-dbus/kalu-dbus.c:782
 msgid "Authorization from PolicyKit failed\n"
 msgstr "Autorisasjon fra PolicyKit mislyktes\n"
 
-#: src/kalu-dbus/kalu-dbus.c:818 src/kalu-dbus/kalu-dbus.c:986
-#: src/kalu-dbus/kalu-dbus.c:1024 src/kalu-dbus/kalu-dbus.c:1125
-#: src/kalu-dbus/kalu-dbus.c:1198 src/kalu-dbus/kalu-dbus.c:1479
-#: src/kalu-dbus/kalu-dbus.c:1497 src/kalu-dbus/kalu-dbus.c:1517
+#: src/kalu-dbus/kalu-dbus.c:827 src/kalu-dbus/kalu-dbus.c:995
+#: src/kalu-dbus/kalu-dbus.c:1033 src/kalu-dbus/kalu-dbus.c:1134
+#: src/kalu-dbus/kalu-dbus.c:1207 src/kalu-dbus/kalu-dbus.c:1488
+#: src/kalu-dbus/kalu-dbus.c:1506 src/kalu-dbus/kalu-dbus.c:1526
 msgid "Invalid state"
 msgstr "Ugyldig tilstand"
 
-#: src/kalu-dbus/kalu-dbus.c:850
+#: src/kalu-dbus/kalu-dbus.c:859
 #, c-format
 msgid "Failed to initialize alpm library: %s\n"
 msgstr "Kunne ikke initialisere alpm biblioteket: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:858
+#: src/kalu-dbus/kalu-dbus.c:867
 msgid "ALPM has no downloader capability\n"
 msgstr "ALPM støtter ikke nedlasting\n"
 
-#: src/kalu-dbus/kalu-dbus.c:874
+#: src/kalu-dbus/kalu-dbus.c:883
 #, c-format
 msgid "Unable to set log file: %s\n"
 msgstr "Kan ikke sette loggfilen: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:885
+#: src/kalu-dbus/kalu-dbus.c:894
 #, c-format
 msgid "Unable to set gpgdir: %s\n"
 msgstr "Kan ikke sette gpgdir: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:896
+#: src/kalu-dbus/kalu-dbus.c:905
 #, c-format
 msgid "Unable to add hook dir '%s': %s\n"
 msgstr "Kan ikke legge til krok katalog '%s': %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:915
+#: src/kalu-dbus/kalu-dbus.c:924
 #, c-format
 msgid "Unable to set cache dirs: %s\n"
 msgstr "Kan ikke sette bufferkataloger: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:924
+#: src/kalu-dbus/kalu-dbus.c:933
 #, c-format
 msgid "Unable to set default siglevel: %s\n"
 msgstr "Kan ikke sette standard siglevel: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:996
+#: src/kalu-dbus/kalu-dbus.c:1005
 msgid "Failed to release alpm library\n"
 msgstr "Kunne ikke frigi alpm bibliotek\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1039
+#: src/kalu-dbus/kalu-dbus.c:1048
 #, c-format
 msgid "Could not register database %s: %s\n"
 msgstr "Kan ikke registrere databasen %s: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1071
+#: src/kalu-dbus/kalu-dbus.c:1080
 #, c-format
 msgid ""
 "Server %s contains the $arch variable, but no Architecture was defined.\n"
 msgstr ""
 "Server %s inneholder $arch variabelen, men ingen Arkitektur ble definert\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1086
+#: src/kalu-dbus/kalu-dbus.c:1095
 #, c-format
 msgid "Could not add server %s to database %s: %s\n"
 msgstr "Kunne ikke legge server %s til databasen %s: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1100
+#: src/kalu-dbus/kalu-dbus.c:1109
 #, c-format
 msgid "Database %s is not valid: %s\n"
 msgstr "Databasen %s er ugyldig: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1174
+#: src/kalu-dbus/kalu-dbus.c:1183
 msgid "Invalid call to Answer, no Question pending.\n"
 msgstr "Ugyldig anrop til Svar, ingen Spørsmål venter.\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1207
+#: src/kalu-dbus/kalu-dbus.c:1216
 #, c-format
 msgid "Failed to initiate transaction: %s\n"
 msgstr "Kunne ikke forberede transaksjon: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1248
+#: src/kalu-dbus/kalu-dbus.c:1257
 #, c-format
 msgid "- Package %s requires %s\n"
 msgstr "- Pakke %s krever %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1265
+#: src/kalu-dbus/kalu-dbus.c:1274
 #, c-format
 msgid "- Packages %s and %s are in conflict\n"
 msgstr "Pakkene %s og %s er i konflikt\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1273
+#: src/kalu-dbus/kalu-dbus.c:1282
 #, c-format
 msgid "- Packages %s and %s are in conflict: %s\n"
 msgstr "Pakkene %s og %s er i konflikt: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1296
+#: src/kalu-dbus/kalu-dbus.c:1305
 #, c-format
 msgid ""
 "Failed to prepare transaction: %s :\n"
@@ -2377,32 +2386,32 @@ msgstr ""
 "Kunne ikke forberede transaksjon: %s :\n"
 "%s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1304
+#: src/kalu-dbus/kalu-dbus.c:1313
 #, c-format
 msgid "Failed to prepare transaction: %s\n"
 msgstr "Kunne ikke forberede transaksjon: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1388
+#: src/kalu-dbus/kalu-dbus.c:1397
 #, c-format
 msgid "- %s exists in both %s and %s\n"
 msgstr "- %s finnes i både '%s' og '%s'\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1396
+#: src/kalu-dbus/kalu-dbus.c:1405
 #, c-format
 msgid "- %s exists in both %s and current filesystem\n"
 msgstr "- %s finnes i både %s og på filsystemet\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1403
+#: src/kalu-dbus/kalu-dbus.c:1412
 #, c-format
 msgid "- Unknown conflict for %s\n"
 msgstr "- Ukjent konflikt for %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1420
+#: src/kalu-dbus/kalu-dbus.c:1429
 #, c-format
 msgid "- %s in invalid or corrupted\n"
 msgstr "- %s er ugyldig eller korrupt\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1439
+#: src/kalu-dbus/kalu-dbus.c:1448
 #, c-format
 msgid ""
 "Failed to commit transaction: %s :\n"
@@ -2412,22 +2421,22 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1447
+#: src/kalu-dbus/kalu-dbus.c:1456
 #, c-format
 msgid "Failed to commit transaction: %s\n"
 msgstr ""
 "Kunne ikke utføre transaksjon: %s\n"
 "\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1576
+#: src/kalu-dbus/kalu-dbus.c:1585
 msgid "Session not initialized\n"
 msgstr "Økten kunne ikke bli initialisert\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1583
+#: src/kalu-dbus/kalu-dbus.c:1592
 msgid "Session initialized for another client\n"
 msgstr "Økten er startet for en annen klient\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1599
+#: src/kalu-dbus/kalu-dbus.c:1608
 #, c-format
 msgid "Unknown method: %s\n"
 msgstr "Ukjent metode: %s\n"

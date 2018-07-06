@@ -962,6 +962,7 @@ kalu_alpm_has_updates_watched (alpm_list_t **packages, alpm_list_t *watched,
                     package->new_version = strdup (alpm_pkg_get_version (pkg));
                     package->dl_size = (guint) alpm_pkg_download_size (pkg);
                     package->new_size = (guint) alpm_pkg_get_isize (pkg);
+		    package->ignored = (guint) alpm_pkg_should_ignore(alpm->handle, pkg);
 
                     *packages = alpm_list_add (*packages, package);
                     debug ("found watched update %s: %s -> %s", package->name,

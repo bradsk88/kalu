@@ -243,6 +243,7 @@ typedef struct _kalu_package_t {
     guint    dl_size;
     guint    old_size; /* old installed size */
     guint    new_size; /* new installed size */
+    gboolean ignored; /* 1 if user has ignored updates via pacman.conf IgnorePkg */
 } kalu_package_t;
 
 typedef enum {

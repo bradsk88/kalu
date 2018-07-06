@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalu 4.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/jjk-jacky/kalu/issues\n"
-"POT-Creation-Date: 2018-01-28 01:15-0300\n"
+"POT-Creation-Date: 2018-07-05 20:36-0600\n"
 "PO-Revision-Date: 2017-08-21 18:52-0300\n"
 "Last-Translator: pepecuis@gmail.com\n"
 "Language-Team: Argentinian\n"
@@ -620,7 +620,7 @@ msgstr "No se puede agregar un servidor %s a la base de datos %s: %s"
 msgid "Failed to update %s: %s"
 msgstr "Fallo actualizando %s: %s"
 
-#: src/kalu/kalu-alpm.c:776 src/kalu-dbus/kalu-dbus.c:1234
+#: src/kalu/kalu-alpm.c:776 src/kalu-dbus/kalu-dbus.c:1243
 #, c-format
 msgid "- Package %s does not have a valid architecture\n"
 msgstr "- El paquete %s no tiene una arquitectura válida\n"
@@ -845,7 +845,7 @@ msgid "Mark checked news as read"
 msgstr "Marcar noticias chequeadas como leidas"
 
 #: src/kalu/news.c:1273 src/kalu/preferences.c:2193 src/kalu/updater.c:3228
-#: src/kalu/watched.c:945
+#: src/kalu/watched.c:1002
 msgid "_Close"
 msgstr "_Cerrar"
 
@@ -1448,15 +1448,15 @@ msgstr "No chequear AUR para estos paquetes :"
 msgid "Package name"
 msgstr "Nombre del paquete"
 
-#: src/kalu/preferences.c:2071 src/kalu/watched.c:724
+#: src/kalu/preferences.c:2071 src/kalu/watched.c:778
 msgid "Add a new package"
 msgstr "Agregar un nuevo paquete"
 
-#: src/kalu/preferences.c:2072 src/kalu/watched.c:733
+#: src/kalu/preferences.c:2072 src/kalu/watched.c:787
 msgid "Edit selected package"
 msgstr "Editar el paquete seleccionado"
 
-#: src/kalu/preferences.c:2073 src/kalu/watched.c:743
+#: src/kalu/preferences.c:2073 src/kalu/watched.c:797
 msgid "Remove selected package"
 msgstr "Remover el paquete seleccionado"
 
@@ -1781,12 +1781,12 @@ msgctxt "column"
 msgid "Repo"
 msgstr "Repo"
 
-#: src/kalu/updater.c:1318 src/kalu/updater.c:3042 src/kalu/watched.c:846
+#: src/kalu/updater.c:1318 src/kalu/updater.c:3042 src/kalu/watched.c:900
 msgctxt "column"
 msgid "Package"
 msgstr "Paquete"
 
-#: src/kalu/updater.c:1326 src/kalu/watched.c:865
+#: src/kalu/updater.c:1326 src/kalu/watched.c:919
 msgctxt "column"
 msgid "Version"
 msgstr "Versión"
@@ -2146,17 +2146,17 @@ msgctxt "column"
 msgid "Old/Current"
 msgstr "Antiguo/Actual"
 
-#: src/kalu/updater.c:3062 src/kalu/watched.c:875
+#: src/kalu/updater.c:3062 src/kalu/watched.c:929
 msgctxt "column"
 msgid "New"
 msgstr "Nuevo"
 
-#: src/kalu/updater.c:3074 src/kalu/watched.c:885
+#: src/kalu/updater.c:3074 src/kalu/watched.c:939
 msgctxt "column"
 msgid "Download"
 msgstr "Descarga"
 
-#: src/kalu/updater.c:3096 src/kalu/watched.c:896
+#: src/kalu/updater.c:3096 src/kalu/watched.c:950
 msgctxt "column"
 msgid "Installed"
 msgstr "Instalado"
@@ -2237,48 +2237,57 @@ msgstr "Si, importar cambios."
 msgid "No, keep the list as is."
 msgstr "No, mantener la lista como esta."
 
-#: src/kalu/watched.c:674
+#: src/kalu/watched.c:696
+msgid "Check all packages"
+msgstr ""
+
+#: src/kalu/watched.c:701
+#, fuzzy
+msgid "Uncheck all packages"
+msgstr "No se pueden chequear las actualizaciones de paquetes de AUR"
+
+#: src/kalu/watched.c:728
 msgid "Mark updated watched packages - kalu"
 msgstr "Marcar actualizar los paquetes observados - kalu"
 
-#: src/kalu/watched.c:678
+#: src/kalu/watched.c:732
 msgid "Manage watched packages - kalu"
 msgstr "Gestionar paquetes observador - kalu"
 
-#: src/kalu/watched.c:682
+#: src/kalu/watched.c:736
 msgid "Mark updated watched AUR packages - kalu"
 msgstr "Marcar paquetes observados AUR actualizados - kalu"
 
-#: src/kalu/watched.c:686
+#: src/kalu/watched.c:740
 msgid "Manage watched AUR packages - kalu"
 msgstr "Gestionar paquetes observados AUR - kalu"
 
-#: src/kalu/watched.c:760
+#: src/kalu/watched.c:814
 msgid "Reload list from memory (undo changes)"
 msgstr "Recargar lista desde memoria (deshace cambios)"
 
-#: src/kalu/watched.c:772
+#: src/kalu/watched.c:826
 msgid "Reload list from file"
 msgstr "Recargar lista desde archivo"
 
-#: src/kalu/watched.c:824
+#: src/kalu/watched.c:878
 msgctxt "column"
 msgid "Update"
 msgstr "Actualizar"
 
-#: src/kalu/watched.c:920
+#: src/kalu/watched.c:977
 msgid "_Mark as seen"
 msgstr "_Marcar como vista"
 
-#: src/kalu/watched.c:925
+#: src/kalu/watched.c:982
 msgid "Save new version numbers of checked packages"
 msgstr "Guardar nuevos números de versión de los paquetes chequeados"
 
-#: src/kalu/watched.c:933
+#: src/kalu/watched.c:990
 msgid "_Save list"
 msgstr "_Guardar lista"
 
-#: src/kalu/watched.c:938
+#: src/kalu/watched.c:995
 msgid "Save list of watched packages"
 msgstr "Guardar lista de los paquetes observados"
 
@@ -2290,71 +2299,71 @@ msgstr " [instalado]"
 msgid " [pending]"
 msgstr " [pendiente]"
 
-#: src/kalu-dbus/kalu-dbus.c:741
+#: src/kalu-dbus/kalu-dbus.c:750
 msgid "Session already initialized\n"
 msgstr "La sesión ya está inicializada\n"
 
-#: src/kalu-dbus/kalu-dbus.c:763
+#: src/kalu-dbus/kalu-dbus.c:772
 msgid "No error message"
 msgstr "No hay mensaje de error"
 
-#: src/kalu-dbus/kalu-dbus.c:773
+#: src/kalu-dbus/kalu-dbus.c:782
 msgid "Authorization from PolicyKit failed\n"
 msgstr "Fallo la autorización de PolicyKit\n"
 
-#: src/kalu-dbus/kalu-dbus.c:818 src/kalu-dbus/kalu-dbus.c:986
-#: src/kalu-dbus/kalu-dbus.c:1024 src/kalu-dbus/kalu-dbus.c:1125
-#: src/kalu-dbus/kalu-dbus.c:1198 src/kalu-dbus/kalu-dbus.c:1479
-#: src/kalu-dbus/kalu-dbus.c:1497 src/kalu-dbus/kalu-dbus.c:1517
+#: src/kalu-dbus/kalu-dbus.c:827 src/kalu-dbus/kalu-dbus.c:995
+#: src/kalu-dbus/kalu-dbus.c:1033 src/kalu-dbus/kalu-dbus.c:1134
+#: src/kalu-dbus/kalu-dbus.c:1207 src/kalu-dbus/kalu-dbus.c:1488
+#: src/kalu-dbus/kalu-dbus.c:1506 src/kalu-dbus/kalu-dbus.c:1526
 msgid "Invalid state"
 msgstr "Estado invalido"
 
-#: src/kalu-dbus/kalu-dbus.c:850
+#: src/kalu-dbus/kalu-dbus.c:859
 #, c-format
 msgid "Failed to initialize alpm library: %s\n"
 msgstr ""
 "Fallo la inicialización de la biblioteca alpm: %s\n"
 "\n"
 
-#: src/kalu-dbus/kalu-dbus.c:858
+#: src/kalu-dbus/kalu-dbus.c:867
 msgid "ALPM has no downloader capability\n"
 msgstr "ALPM no tiene capacidad para descargar\n"
 
-#: src/kalu-dbus/kalu-dbus.c:874
+#: src/kalu-dbus/kalu-dbus.c:883
 #, c-format
 msgid "Unable to set log file: %s\n"
 msgstr "No se puede establecer el archivo de bitácora: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:885
+#: src/kalu-dbus/kalu-dbus.c:894
 #, c-format
 msgid "Unable to set gpgdir: %s\n"
 msgstr "No se puede establecer gpgdir: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:896
+#: src/kalu-dbus/kalu-dbus.c:905
 #, c-format
 msgid "Unable to add hook dir '%s': %s\n"
 msgstr "No se puede agregar el gancho dir '%s': %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:915
+#: src/kalu-dbus/kalu-dbus.c:924
 #, c-format
 msgid "Unable to set cache dirs: %s\n"
 msgstr "No se puede establecer las carpetas de cache: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:924
+#: src/kalu-dbus/kalu-dbus.c:933
 #, c-format
 msgid "Unable to set default siglevel: %s\n"
 msgstr "No se puede establecer el siglevel por defecto: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:996
+#: src/kalu-dbus/kalu-dbus.c:1005
 msgid "Failed to release alpm library\n"
 msgstr "Falla al liberar la biblioteca alpm\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1039
+#: src/kalu-dbus/kalu-dbus.c:1048
 #, c-format
 msgid "Could not register database %s: %s\n"
 msgstr "No se pudo registrar la base de datos %s: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1071
+#: src/kalu-dbus/kalu-dbus.c:1080
 #, c-format
 msgid ""
 "Server %s contains the $arch variable, but no Architecture was defined.\n"
@@ -2362,93 +2371,93 @@ msgstr ""
 "El servidor %s contiene la variable $arch, pero no se definio una "
 "Arquitectura.\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1086
+#: src/kalu-dbus/kalu-dbus.c:1095
 #, c-format
 msgid "Could not add server %s to database %s: %s\n"
 msgstr "No se puede agregar un servidor %s a la base de datos %s: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1100
+#: src/kalu-dbus/kalu-dbus.c:1109
 #, c-format
 msgid "Database %s is not valid: %s\n"
 msgstr "La base de datos %s no es válida: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1174
+#: src/kalu-dbus/kalu-dbus.c:1183
 msgid "Invalid call to Answer, no Question pending.\n"
 msgstr "Llamada invalida a Responder, no hay Preguntas pendientes.\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1207
+#: src/kalu-dbus/kalu-dbus.c:1216
 #, c-format
 msgid "Failed to initiate transaction: %s\n"
 msgstr "Falla iniciando transacción: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1248
+#: src/kalu-dbus/kalu-dbus.c:1257
 #, c-format
 msgid "- Package %s requires %s\n"
 msgstr "-Paquete %s requiere %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1265
+#: src/kalu-dbus/kalu-dbus.c:1274
 #, c-format
 msgid "- Packages %s and %s are in conflict\n"
 msgstr "-Paquetes %s y %s están en conflicto\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1273
+#: src/kalu-dbus/kalu-dbus.c:1282
 #, c-format
 msgid "- Packages %s and %s are in conflict: %s\n"
 msgstr "-Paquetes %s y %s están en conflicto: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1296
+#: src/kalu-dbus/kalu-dbus.c:1305
 #, c-format
 msgid ""
 "Failed to prepare transaction: %s :\n"
 "%s\n"
 msgstr "Falla al preparar la transacción: %s: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1304
+#: src/kalu-dbus/kalu-dbus.c:1313
 #, c-format
 msgid "Failed to prepare transaction: %s\n"
 msgstr "Falla al preparar la transacción: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1388
+#: src/kalu-dbus/kalu-dbus.c:1397
 #, c-format
 msgid "- %s exists in both %s and %s\n"
 msgstr "- %s existe en %s y en %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1396
+#: src/kalu-dbus/kalu-dbus.c:1405
 #, c-format
 msgid "- %s exists in both %s and current filesystem\n"
 msgstr "-%s existe en %s y el sistema de archivos actual\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1403
+#: src/kalu-dbus/kalu-dbus.c:1412
 #, c-format
 msgid "- Unknown conflict for %s\n"
 msgstr "- Conflicto desconocido para %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1420
+#: src/kalu-dbus/kalu-dbus.c:1429
 #, c-format
 msgid "- %s in invalid or corrupted\n"
 msgstr "- %s está invalido o corrupto\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1439
+#: src/kalu-dbus/kalu-dbus.c:1448
 #, c-format
 msgid ""
 "Failed to commit transaction: %s :\n"
 "%s\n"
 msgstr "Falla realizando la transacción: %s : %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1447
+#: src/kalu-dbus/kalu-dbus.c:1456
 #, c-format
 msgid "Failed to commit transaction: %s\n"
 msgstr "Falla realizando la transacción: %s\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1576
+#: src/kalu-dbus/kalu-dbus.c:1585
 msgid "Session not initialized\n"
 msgstr "Sesión not inicializada\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1583
+#: src/kalu-dbus/kalu-dbus.c:1592
 msgid "Session initialized for another client\n"
 msgstr "Sesión inicializada por otro cliente\n"
 
-#: src/kalu-dbus/kalu-dbus.c:1599
+#: src/kalu-dbus/kalu-dbus.c:1608
 #, c-format
 msgid "Unknown method: %s\n"
 msgstr "Metodo desconocido: %s\n"

@@ -220,6 +220,7 @@ aur_has_updates (alpm_list_t **packages,
         /* parse json */
         debug ("parsing json");
         json = cJSON_Parse (data);
+	debug("JSON %s", data);
         if (!json)
         {
             debug ("invalid json");
@@ -231,6 +232,7 @@ aur_has_updates (alpm_list_t **packages,
             free (data);
             return FALSE;
         }
+
         results = cJSON_GetObjectItem (json, "results");
         c = cJSON_GetArraySize (results);
         debug ("got %d results", c);
@@ -288,6 +290,7 @@ aur_has_updates (alpm_list_t **packages,
                     kpkg->desc = strdup (pkgdesc);
                     kpkg->old_version = strdup (oldver);
                     kpkg->new_version = strdup (pkgver);
+		    kpkg->ignored = 1; // TODO: Determine this!
                     *packages = alpm_list_add (*packages, kpkg);
                 }
             }

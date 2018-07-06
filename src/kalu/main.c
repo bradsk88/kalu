@@ -283,6 +283,11 @@ notify_updates (
             {
                 kalu_package_t *pkg = i->data;
 
+                if (pkg->ignored == 1) {
+		    --nb;
+                    continue;
+                }
+
                 if (fields[FLD_PACKAGE])
                 {
                     int j;
